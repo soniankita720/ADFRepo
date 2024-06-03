@@ -1,0 +1,17 @@
+{
+	"name": "DS_TargetSingleFileFromBlobToSQLDatabase",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_TargetAzureSqlDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "SampleSourceData"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

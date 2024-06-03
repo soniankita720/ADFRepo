@@ -1,0 +1,29 @@
+{
+	"name": "DS_SourceAzureBlobStorage",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SourceAzureBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "SampleSourceData.txt",
+				"container": "sourcefile"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Key\tAge\tDate\tCountry\tSerotype\t",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

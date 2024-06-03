@@ -1,0 +1,9 @@
+{
+	"name": "adftransferfilefromblobtodatalake",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "955d7969-6dd0-47ab-95cd-b801e3903eff",
+		"tenantId": "bc033b41-ab44-48bb-b615-0860405ae83b"
+	}
+}

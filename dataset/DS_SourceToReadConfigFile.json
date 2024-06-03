@@ -1,0 +1,20 @@
+{
+	"name": "DS_SourceToReadConfigFile",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SourceAzureBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "config.json",
+				"container": "config"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

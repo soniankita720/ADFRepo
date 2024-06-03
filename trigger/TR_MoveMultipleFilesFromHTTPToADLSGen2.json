@@ -1,0 +1,24 @@
+{
+	"name": "TR_MoveMultipleFilesFromHTTPToADLSGen2",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_MoveMultipleFilesUsingLookupFromHTTPToADLSGen2",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 3,
+				"startTime": "2024-05-25T11:47:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}

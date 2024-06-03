@@ -1,0 +1,25 @@
+{
+	"name": "DS_TargetAllCSVFilesFromBlobToSQLDatabase",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_TargetAzureSqlDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"TargetFiles": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": {
+				"value": "@dataset().TargetFiles",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

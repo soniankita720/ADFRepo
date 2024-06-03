@@ -1,0 +1,26 @@
+{
+	"name": "DS_SourceZipFileAzureBlobStorage",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SourceZipFileAzureBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Chartdata.zip",
+				"container": "sourcefile"
+			},
+			"columnDelimiter": ",",
+			"compressionCodec": "ZipDeflate",
+			"compressionLevel": "Optimal",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
