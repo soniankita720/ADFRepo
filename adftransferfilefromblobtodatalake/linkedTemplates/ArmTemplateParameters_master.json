@@ -1,0 +1,54 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adftransferfilefromblobtodatalake"
+		},
+		"LS_SourceZipFileAzureBlobStorage_connectionString": {
+			"value": "DefaultEndpointsProtocol=https;AccountName=sourceazureblobstorage;EndpointSuffix=core.windows.net;"
+		},
+		"LS_AzureKeyVault_properties_typeProperties_baseUrl": {
+			"value": "https://azurekeyvaultpractice01.vault.azure.net/"
+		},
+		"LS_SourceAzureBlobStorage_properties_typeProperties_connectionString_secretName": {
+			"value": "BlobStorageConnectionString"
+		},
+		"LS_SourceAzureSqlDatabase_properties_typeProperties_server": {
+			"value": "azuresqlserverpractice.database.windows.net"
+		},
+		"LS_SourceAzureSqlDatabase_properties_typeProperties_database": {
+			"value": "azuresqldatabasepractice"
+		},
+		"LS_SourceAzureSqlDatabase_properties_typeProperties_userName": {
+			"value": "ankita"
+		},
+		"LS_SourceHTTP_properties_typeProperties_url": {
+			"value": "@{linkedService().baseURL}"
+		},
+		"LS_TargetAzureDataLakeStorage_properties_typeProperties_url": {
+			"value": "https://targetazuredatalakegen2.dfs.core.windows.net/"
+		},
+		"LS_TargetAzureSqlDatabase_properties_typeProperties_server": {
+			"value": "azuresqlserverpractice.database.windows.net"
+		},
+		"LS_TargetAzureSqlDatabase_properties_typeProperties_database": {
+			"value": "azuresqldatabasepractice"
+		},
+		"LS_TargetAzureSqlDatabase_properties_typeProperties_userName": {
+			"value": "ankita"
+		},
+		"LS_TargetZipFileAzureDataLakeStorage_properties_typeProperties_url": {
+			"value": "https://targetazuredatalakegen2.dfs.core.windows.net/"
+		},
+		"TR_MoveFileFromBlobToADLS_properties_typeProperties_scope": {
+			"value": "/subscriptions/20d883f9-c0d1-481f-b690-d9a2eb60dee3/resourceGroups/RG_PracticeADF/providers/Microsoft.Storage/storageAccounts/sourceazureblobstorage"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
